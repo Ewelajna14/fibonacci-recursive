@@ -1,5 +1,9 @@
 function fibonacci(n) {
-  // type your code here
+  if (n < 2) {
+    return n 
+  }
+
+ return fibonacci(n-1) + fibonacci(n-2)
 }
 
 if (require.main === module) {
@@ -9,8 +13,8 @@ if (require.main === module) {
 
   console.log("");
 
-  console.log("Expecting: 1");
-  console.log("=>", fibonacci(2));
+  console.log("Expecting: 2");
+  console.log("=>", fibonacci(3));
 
   console.log("");
 
@@ -22,3 +26,6 @@ module.exports = fibonacci;
 
 // Please add your pseudocode to this file
 // And a written explanation of your solution
+ /* fn = fn-1 + fn-2
+ 
+ */
